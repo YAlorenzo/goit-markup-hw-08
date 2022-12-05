@@ -1,0 +1,79 @@
+.footer-nav__contact {
+    color: $color-inform;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            color: $color-psevdo;
+        }
+}
+.footer-nav__address {
+    color: $color-fill;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.footer__logo {
+    font-family: $font-logo, sans-serif;
+    color: $color-fill;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+}
+.footer-nav__list .footer-nav__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__container--margin {
+    margin-left: 70px;
+}
+
+.footer__text {
+    font-weight: 700;
+    line-height: 1.17;
+    color: $color-fill;
+}
+
+.actions-footer__list {
+    display: flex;
+    margin-top: 20px;
+}
+
+.actions-footer__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.actions-footer__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            background-color: $color-psevdo;
+        }
+}
+
+
+
+.actions-footer__icon {
+    fill: $color-fill;
+}
