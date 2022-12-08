@@ -12,8 +12,21 @@
     <title>Document</title>
   </head>
   <body>
-     <header>
-      <div class="header container">
+
+     <header class="page-header">
+     <div class="header container">
+       <a href="./index.html" class="logo-header logo-header--hidden"><span>Web</span>Studio</a>
+       <nav class="nav-header">
+         <button type="button" 
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg class="modal-header-button__icon" width="40px" height="40px">
+            <use href="./images/sprite-burger.svg#modal-header-button"></use>
+          </svg>
+        </button>
+
+      <div class="hidden-container">
        <a href="./index.html" class="logo-header"><span>Web</span>Studio</a>
        <nav class="nav-header">
         <ul class="list-nav">
@@ -37,9 +50,10 @@
           </svg>
           +38 096 111 11 11</a>
         </li>
-      </ul> 
+        </ul> 
+      </div>
     </div>
-    </header>
+  </header>
 
     <main class="main-portfolio">
       <section class="portfolio">
@@ -57,7 +71,7 @@
           <li class="portfolio-list__item">
             <a href="" class="portfolio-list__link">
               <div class="portfolio-list__thumb">
-            <img src="./images/img.tehnokrak.jpg" alt="userfoto" width="370px" height="294px" />
+            <img  srcset="./images/tehnokrak/img.jpg 1x, ./images/tehnokrak/img@2x.jpg 2x" src="./images/tehnokrak/img.jpg" alt="userfoto" />
             <div class="portfolio-list__overlay">
               <p class="portfolio-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
               Все це дозволить відвідувачу отримати вичерпні
@@ -75,7 +89,7 @@
           <li class="portfolio-list__item">
             <a href="" class="portfolio-list__link">
               <div class="portfolio-list__thumb">
-            <img src="./images/img.poster.jpg" alt="userfoto" width="370px" height="294px" />
+            <img srcset="./images/poster/img-poster.jpg 1x, ./images/poster/img-poster@2x.jpg 2x" src="./images/poster/img-poster.jpg" alt="userfoto"/>
             <div class="portfolio-list__overlay">
               <p class="portfolio-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
               Все це дозволить відвідувачу отримати вичерпні
@@ -92,7 +106,7 @@
           <li class="portfolio-list__item">
             <a href="" class="portfolio-list__link">
               <div class="portfolio-list__thumb">
-            <img src="./images/img.seafood.jpg" alt="userfoto" width="370px" height="294px" />
+            <img   srcset="./images/seafood/img.jpg 1x,  ./images/seafood/img@2x.jpg 2x" src="./images/seafood/img.jpg" alt="userfoto"  />
              <div class="portfolio-list__overlay">
               <p class="portfolio-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
               Все це дозволить відвідувачу отримати вичерпні
@@ -108,7 +122,7 @@
           <li class="portfolio-list__item">
             <a href="" class="portfolio-list__link">
               <div class="portfolio-list__thumb">
-            <img src="./images/img.prime.jpg" alt="userfoto" width="370px" height="294px" />
+            <img srcset="./images/prime/img.jpg 1x,  ./images/prime/img@2x.jpg 2x "  src="./images/prime/img.jpg" alt="userfoto" />
              <div class="portfolio-list__overlay">
               <p class="portfolio-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
               Все це дозволить відвідувачу отримати вичерпні
@@ -125,7 +139,7 @@
           <li class="portfolio-list__item">
             <a href="" class="portfolio-list__link">
               <div class="portfolio-list__thumb">
-            <img src="./images/img.boxes.jpg" alt="userfoto" width="370px" height="294px" />
+            <img  srcset="./images/boxes/img.jpg 1x, ./images/boxes/img@2x.jpg 2x"  src="./images/boxes/img.jpg" alt="userfoto"  />
              <div class="portfolio-list__overlay">
               <p class="portfolio-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
               Все це дозволить відвідувачу отримати вичерпні
@@ -142,7 +156,7 @@
           <li class="portfolio-list__item">
             <a href="" class="portfolio-list__link">
               <div class="portfolio-list__thumb">
-            <img src="./images/img.borders.jpg" alt="userfoto" width="370px" height="294px" />
+            <img srcset="./images/comp/img.jpg 1x, ./images/comp/img@2x.jpg 2x" src="./images/comp/img.jpg" alt="userfoto"  />
              <div class="portfolio-list__overlay">
               <p class="portfolio-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
               Все це дозволить відвідувачу отримати вичерпні
@@ -159,7 +173,7 @@
           <li class="portfolio-list__item">
             <a href="" class="portfolio-list__link">
               <div class="portfolio-list__thumb">
-            <img src="./images/img.limited.jpg" alt="userfoto" width="370px" height="294px" />
+            <img  srcset="./images/limited/img.jpg 1x, ./images/limited/img@2x.jpg 2x" src="./images/limited/img.jpg" alt="userfoto"  />
              <div class="portfolio-list__overlay">
               <p class="portfolio-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
               Все це дозволить відвідувачу отримати вичерпні
@@ -176,7 +190,7 @@
           <li class="portfolio-list__item">
             <a href="" class="portfolio-list__link">
               <div class="portfolio-list__thumb">
-              <img src="./images/img.lab.jpg" alt="userfoto" width="370px" height="294px" />
+              <img  srcset="./images/lab/img.jpg 1x, ./images/lab/img@2x.jpg 2x" src="./images/lab/img.jpg" alt="userfoto" />
                <div class="portfolio-list__overlay">
                  <p class="portfolio-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                  Все це дозволить відвідувачу отримати вичерпні
@@ -193,7 +207,7 @@
           <li class="portfolio-list__item">
             <a href="" class="portfolio-list__link">
               <div class="portfolio-list__thumb">
-            <img src="./images/img.business.jpg" alt="userfoto" width="370px" height="294px" />
+            <img srcset="./images/business/img.jpg 1x, ./images/business/img@2x.jpg 2x" src="./images/business/img.jpg" alt="userfoto"  />
              <div class="portfolio-list__overlay">
               <p class="portfolio-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
               Все це дозволить відвідувачу отримати вичерпні
@@ -211,10 +225,13 @@
       </section>
     </main>
 
-    <footer> 
+  <footer> 
       <div class="footer container "> 
-        <div class="footer__container">
-          <a href="./index.html" class="footer__logo"><span>Web</span>Studio</a>
+        <div class="tablet-footer">
+
+ <div class="footer__container"> 
+
+              <a href="./index.html" class="footer__logo"><span>Web</span>Studio</a>
       <address>
       <ul class="footer-nav__list">
         <li class="footer-nav__item">
@@ -263,7 +280,10 @@
                 </a>
               </li>
           </ul>
-        </div>
+          </div>
+
+         </div>
+        
 
           <form class="form-footer">
             <label for="email_footer" class="form-footer__lable">Підпишіться на розсилку</label>
@@ -279,5 +299,44 @@
           </form>
       </div>
     </footer>
+
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+      
+         <svg class="modal-header-button__icon modal-header-button__icon--close" width="40px" height="40px">
+         <use  href="./images/sprite-burger.svg#icon-close-header"></use>
+         </svg>
+      </button>
+
+      <ul class="mobile-menu-nuv">
+        <li class="mobile-menu-nuv__item"><a href="./index.html" class="mobile-menu-nuv__link">Студія</a></li>
+        <li class="mobile-menu-nuv__item"><a href="./portfolio.html" class="mobile-menu-nuv__link currnet">Портфоліо</a></li>
+        <li class="mobile-menu-nuv__item"><a href="./index.html" class="mobile-menu-nuv__link">Контакти</a></li>
+      </ul>
+      <ul class="contact-list-mobile">
+        <li class="contact-list-mobile__item">
+          <a href="tel:+380961111111" class="contact-list-mobile__link contact-list-mobile__link--telephone">
+          +38 096 111 11 11</a>
+        </li>
+        <li class="contact-list-mobile__item">
+          <a href="mailto:info@devstudio.com" class="contact-list-mobile__link contact-list-mobile__link--email">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="social-network-mobile">
+        <li class="social-network-mobile__item" ><a href=""  class="social-network-mobile__link social-network-mobile__link--padding-right">Instagram</a></li>
+        <li class="social-network-mobile__item"><a href=""  class="social-network-mobile__link social-network-mobile__link--padding">Twitter</a></li>
+        <li class="social-network-mobile__item"><a href=""  class="social-network-mobile__link social-network-mobile__link--padding">Facebook</a></li>
+        <li class="social-network-mobile__item"><a href=""  class="social-network-mobile__link social-network-mobile__link--padding-left">LinkedIn</a></li>
+      </ul>
+    </div>
+
+<script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+ <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -11,10 +11,22 @@
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Document</title>
   </head>
-  <body>
+  <body class="">
    
-    <header>
-      <div class="header container">
+    <header class="page-header">
+     <div class="header container">
+       <a href="./index.html" class="logo-header logo-header--hidden"><span>Web</span>Studio</a>
+       <nav class="nav-header">
+         <button type="button" 
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg class="modal-header-button__icon" width="40px" height="40px">
+            <use href="./images/sprite-burger.svg#modal-header-button"></use>
+          </svg>
+        </button>
+
+      <div class="hidden-container">
        <a href="./index.html" class="logo-header"><span>Web</span>Studio</a>
        <nav class="nav-header">
         <ul class="list-nav">
@@ -38,9 +50,10 @@
           </svg>
           +38 096 111 11 11</a>
         </li>
-      </ul> 
+        </ul> 
+      </div>
     </div>
-    </header>
+  </header>
 
     <main>
       <section class="order-section">
@@ -94,7 +107,7 @@
             <h3 class="list-benefits__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
             <p class="list-benefits__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
           </li>
-
+        </div>
         </ul>
       </div>
       </section>
@@ -102,13 +115,13 @@
         <div class="container">
         <h2 class="section-product__title">Чим ми займаємось</h2>
         <ul class="product-list">
-          <li class="product-list__item"><img src="images/img.jpg" alt="userfoto" width="370px" height="294px" />
+          <li class="product-list__item"><img srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x" src="./images/img.jpg" alt="userfoto" width="370px" height="294px" />
               <p class="product-list__text">ДЕСКТОПНІ ДОДАТКИ</p>
           </li>
-          <li class="product-list__item"><img src="images/img1.jpg" alt="userfoto" width="370px" height="294px" />
+          <li class="product-list__item"><img srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"  src="./images/img1.jpg" alt="userfoto" width="370px" height="294px" />
               <p class="product-list__text">МОБІЛЬНІ ДОДАТКИ</p>
           </li>
-          <li class="product-list__item"><img src="images/img2.jpg" alt="userfoto" width="370px" height="294px" />
+          <li class="product-list__item"><img  srcset="./images/img2.jpg 1x ./images/img2@2x.jpg 2x" src="./images/img2.jpg" alt="userfoto" width="370px" height="294px" />
               <p class="product-list__text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
           </li>
         </ul>
@@ -121,7 +134,7 @@
         <ul class="list-team">
           
           <li class="list-team__item">
-            <img src="./images/img.igor.jpg" alt="userfoto" width="270px" height="260px" />
+            <img  srcset="./images/igor-photo/img-igor450.jpg 1x, ./images/igor-photo/img-igor900.jpg 2x"  src="./images/igor-photo/img-igor450.jpg" alt="userfoto"/>
             <div class="list-team__block">
               <h3 class="list-team__title">Ігор Дем'яненко</h3>
               <p class="list-team__text">Product Designer</p>
@@ -153,7 +166,7 @@
             </div>
           </li>
           <li class="list-team__item">
-            <img src="./images/img.olga.jpg" alt="userfoto" width="270px" height="260px" />
+            <img  srcset="./images/olga-photo/img-olga450.jpg 1x, ./images/olga-photo/img-olga900.jpg 2x" src="./images/olga-photo/img-olga450.jpg" alt="userfoto"  />
             <div class="list-team__block">
               <h3 class="list-team__title">Ольга Рєпіна</h3>
               <p class="list-team__text">Frontend Developer</p>
@@ -184,7 +197,7 @@
             </div>
           </li>
           <li class="list-team__item">
-            <img src="./images/img.mikola.jpg" alt="userfoto" width="270px" height="260px" />
+            <img   srcset="./images/mikola-photo/img-mikola450.jpg 1x, ./images/mikola-photo/img-mikola900.jpg 2x" src="./images/mikola-photo/img-mikola450.jpg" alt="userfoto" />
             <div class="list-team__block">
               <h3 class="list-team__title">Микола Тарасов</h3>
               <p class="list-team__text">Marketing</p>
@@ -215,7 +228,7 @@
             </div>
           </li>
           <li class="list-team__item">
-            <img src="./images/img.mihailo.jpg" alt="userfoto" width="270px" height="260px" />
+            <img srcset="./images/mihailo-photo/img-mihailo450.jpg 1x, ./images/mihailo-photo/img-mihailo900.jpg 2x"  src="./images/mihailo-photo/img-mihailo450.jpg" alt="userfoto"/>
             <div class="list-team__block">
               <h3 class="list-team__title">Михайло Єрмаков</h3>
               <p class="list-team__text">UI Designer</p>
@@ -290,10 +303,13 @@
       </section>
     </main>
 
-    <footer> 
+ <footer> 
       <div class="footer container "> 
-        <div class="footer__container">
-          <a href="./index.html" class="footer__logo"><span>Web</span>Studio</a>
+        <div class="tablet-footer">
+
+ <div class="footer__container"> 
+
+              <a href="./index.html" class="footer__logo"><span>Web</span>Studio</a>
       <address>
       <ul class="footer-nav__list">
         <li class="footer-nav__item">
@@ -342,7 +358,10 @@
                 </a>
               </li>
           </ul>
-        </div>
+          </div>
+
+         </div>
+        
 
           <form class="form-footer">
             <label for="email_footer" class="form-footer__lable">Підпишіться на розсилку</label>
@@ -358,6 +377,40 @@
           </form>
       </div>
     </footer>
+
+
+ <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+      
+         <svg class="modal-header-button__icon modal-header-button__icon--close" width="40px" height="40px">
+         <use  href="./images/sprite-burger.svg#icon-close-header"></use>
+         </svg>
+      </button>
+
+      <ul class="mobile-menu-nuv">
+        <li class="mobile-menu-nuv__item"><a href="./index.html" class="mobile-menu-nuv__link currnet">Студія</a></li>
+        <li class="mobile-menu-nuv__item"><a href="./portfolio.html" class="mobile-menu-nuv__link">Портфоліо</a></li>
+        <li class="mobile-menu-nuv__item"><a href="./index.html" class="mobile-menu-nuv__link">Контакти</a></li>
+      </ul>
+      <ul class="contact-list-mobile">
+        <li class="contact-list-mobile__item">
+          <a href="tel:+380961111111" class="contact-list-mobile__link contact-list-mobile__link--telephone">
+          +38 096 111 11 11</a>
+        </li>
+        <li class="contact-list-mobile__item">
+          <a href="mailto:info@devstudio.com" class="contact-list-mobile__link contact-list-mobile__link--email">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="social-network-mobile">
+        <li class="social-network-mobile__item" ><a href=""  class="social-network-mobile__link social-network-mobile__link--padding-right">Instagram</a></li>
+        <li class="social-network-mobile__item"><a href=""  class="social-network-mobile__link social-network-mobile__link--padding">Twitter</a></li>
+        <li class="social-network-mobile__item"><a href=""  class="social-network-mobile__link social-network-mobile__link--padding">Facebook</a></li>
+        <li class="social-network-mobile__item"><a href=""  class="social-network-mobile__link social-network-mobile__link--padding-left">LinkedIn</a></li>
+      </ul>
+    </div>
+
+
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__button" data-modal-close>
@@ -410,6 +463,13 @@
       </div>
     </div>
 
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js">
     </script>
   </body>
